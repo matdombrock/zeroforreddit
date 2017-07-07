@@ -1,0 +1,81 @@
+<head>
+ 	<meta charset="UTF-8"> 
+ 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<div id="top"></div>
+
+<!---MAIN CONTENT-->
+<div class="filter"> </div>
+<div class="loader" id="loader"> 
+	<div class="loader-text"></div>
+</div>
+
+<div class="result">Loading...</div>
+
+<div class="page_control" >
+	<a href="#top"><button id="last_page_btn">&larr;</button></a><a href="#top"><button id="next_page_btn">&rarr;</button></a>
+</div>
+
+<!--SETTINGS -->
+<div id="settings-toggle" class="settings-toggle"></div>
+<div class="settings" id="settings">
+SETTINGS:<div id="exit-settings" class="exit-settings">X</div></br>
+	<div class="control">
+		/r/<input type="text" id="u_subreddit" name="u_subreddit" onchange="Unsaved(true);"><br>
+	</div>
+
+	<div class="control">
+		Results Per Page: <span id="range">0</span></br>
+		<input type="range" id="u_pp" name="u_pp" min="0" max="10" value="5" step="1" onchange="updatePP(this.value); Unsaved(true);" />
+	</div>
+
+	<div class="control">
+			<div id="unsaved-settings" class="unsaved">-Unsaved Changes-</div>
+		<button class="btn btn-info"  id="update_controls_btn">Update Settings</button>
+	</div>
+
+THEME:
+	<div class="theme_control">
+		Background Color: <input type="color" id="u_bg_color" name="u_bg_color" value="#000000" onchange="themeBG(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+		Background Image URL (Overrides Color): </br> <input type="text" id="u_bg_img" name="u_bg_img" value="" onchange="themeBGIMG(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+		Post Title Color: <input type="color" id="u_title_color" name="u_title_color" value="#cefdff" onchange="themeTitleColor(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+		Font Color: <input type="color" id="u_font_color" name="u_font_color" value="#ffffff" onchange="themeFontColor(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+		Info Link Color: <input type="color" id="u_infolink_color" name="u_infolink_color" value="#ffffff" onchange="themeInfoLinkColor(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+		Post Background Color: <input type="color" id="u_postbg_color" name="u_postbg_color" value="#dcdcdc" onchange="themePostBGColor(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+		Post Background Opacity: <span id="u_post_opacity_marker">0</span></br>
+		<input type="range" id="u_post_opacity" name="u_post_opacity" min="0" max="1" value="0.9" step="0.01" onchange="themePostOpacity(this.value); UnsavedTheme(true);" />
+	</div>
+
+	<div class="theme_control">
+		Info Background Color: <input type="color" id="u_infobg_color" name="u_infobg_color" value="#DCDCDC" onchange="themeInfoBGColor(); UnsavedTheme(true);"><br>
+	</div>
+
+	<div class="theme_control">
+			<div id="unsaved-theme" class="unsaved">-Unsaved Changes-</div>
+		<button class="btn btn-info" id="update_theme_btn">Update Theme</button>
+	</div>
+	</br>
+	</br>
+</div>
+<script src="reddit.js"></script>
