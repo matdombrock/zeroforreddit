@@ -63,7 +63,7 @@ padding:1em;
 .post-title {
 display:block;
 font-size:2em;
-padding:1em;
+padding:0.5em;
 text-decoration:none;
 }
 
@@ -148,7 +148,7 @@ text-align:center;
 
 body {
 background-size:cover;
-font-family:Oswald, sans-serif;
+font-family: 'Lato', sans-serif;
 margin:0 auto;
 padding:0;
 }
