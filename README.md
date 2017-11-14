@@ -1,4 +1,4 @@
-#ZERO FOR REDDIT
+# ZERO FOR REDDIT
 
 <IMG SRC="https://i.imgur.com/GW0CFxS.png">
 <IMG SRC="https://i.imgur.com/is2IcCP.png">
