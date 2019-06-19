@@ -8,6 +8,6 @@ A HIGHLY customizable but read-only Reddit client that was made as a homepage fo
 This also includes a good example of using the HTML5 Local Storage API which is used to save and retrieve the users customization preferences.
 
 DEMO:
-http://mzero.space/lab/reddit/
+https://mzero.space/zeroforreddit/
 
 This software is clearly is not endorsed or made in collaboration with Reddit Inc. However, unlike some of my other software that interacts with Reddit, this is using the offical API. 
