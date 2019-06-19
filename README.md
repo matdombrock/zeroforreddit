@@ -5,7 +5,7 @@
 
 A HIGHLY customizable but read-only Reddit client that was made as a homepage for myself. Good example of basic Reddit API usage without authentication. 
 
-This also includes a good example of using the HTML5 Local Storage API which is used to save and retrieve the users customization preferences.
+This also includes a good example of using the Local Storage API which is used to save and retrieve the users customization preferences.
 
 DEMO:
 https://mzero.space/zeroforreddit/
